@@ -16,7 +16,7 @@ dp = Dispatcher(bot)
 #приветствие
 @dp.message_handler(commands=['start'])
 async def welcome(message: types.Message):
-    await message.answer("это бот для оповещения о выходе манги  \"Девушка на час\"")
+    await message.answer("привет я бот для оповещения о выходе манги  \"Девушка на час\"")
     await get(message)
 
 #берется html файл и создается кэш
