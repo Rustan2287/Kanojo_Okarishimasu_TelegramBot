@@ -40,7 +40,7 @@ async def sammer(message: types.Message):
     n = os.path.getsize("manga.txt")
     m = os.path.getsize("kanojo.txt")
     if n == m:
-        time.sleep(1)
+        time.sleep(43200)
         await get(message)
     else:
         await message.answer("Вышла новая глава манги Девушка на час")
